@@ -8,7 +8,6 @@ import adminRoute from "./app/routes/adminRoute";
 import tripRoute from "./app/routes/tripRoute";
 import busRoute from "./app/routes/busRoute";
 import bookingRoute from "./app/routes/bookingRoute";
-import familyRoute from "./app/routes/familyRoute";
 
 const app = express();
 
@@ -19,7 +18,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.use("/api/v1", usersRoute);
-app.use("/api/v1", familyRoute);
 app.use("/api/v1", seedRoute);
 app.use("/api/v1", adminRoute);
 app.use("/api/v1", tripRoute);
